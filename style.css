@@ -1,3 +1,5 @@
+/* General CSS */
+
 * {
   font-family: "Merriweather", serif;
 }
@@ -21,6 +23,8 @@ html {
   align-items: center;
 }
 
+/* Homepage CSS */
+
 .welcomeTextDiv {
   width: 399.9px;
 }
@@ -29,10 +33,12 @@ html {
   width: 399.9px;
   border: greenyellow 2px solid;
   border-radius: 4px;
-  padding: 10px;
+  padding: 20px 10px;
   text-align: center;
   margin: 30px auto;
 }
+
+/* ListPage CSS */
 
 .listDiv > ol {
   padding: 0;
@@ -74,4 +80,78 @@ html {
   list-style: Upper-roman;
   font-weight: 400;
   /* text-align: start; */
+}
+
+/* Gallery CSS */
+
+.cubeDiv {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+
+.animatedCube {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 100px;
+  width: 100px;
+  background-color: sandybrown;
+  font-size: small;
+}
+
+.animatedCube > img {
+  object-fit: cover;
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  opacity: 1;
+}
+
+.transitionsCube {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 100px;
+  width: 100px;
+  background-color: sandybrown; /*Just because it's a requirement, but it doesn't show because of the wonderful image*/
+  font-size: small;
+  transition-duration: 300ms;
+  transition-delay: 0ms;
+  transition-property: transform, background-color;
+  transition-timing-function: ease-in-out;
+}
+
+.transitionsCube > img {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  opacity: 0;
+  transition-duration: 150ms;
+  transition-delay: 150ms;
+  transition-property: opacity;
+  transition-timing-function: ease-in-out;
+}
+
+.transitionsCube:hover {
+  transform: scale(2);
+  background-color: gray;
+}
+
+.transitionsCube:hover img {
+  opacity: 1;
+}
+
+.dropdownListDiv > ul {
+  list-style: none;
+}
+
+.dropdownListDiv > ul > li > ul {
+  display: none;
+}
+
+.dropdownListDiv:hover > ul > li > ul {
+  display: block;
 }
