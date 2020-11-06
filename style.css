@@ -188,3 +188,13 @@ html {
 .dropdownListDiv:hover > ul > li > ul {
   display: block;
 }
+
+@media screen and (max-width: 768px) {
+  @keyframes colorAndSize {
+    50% {
+      width: 200px;
+      height: 200px;
+      opacity: 1;
+    }
+  }
+}
