@@ -1,4 +1,6 @@
-<!-- This is my listPage.  -->
+<!-- This is my listPage. It contains a navbar, a maindiv and a listdiv. navbar and maindiv is flexboxes,  -->
+<!-- because I want to space evenly between the navbar items, and easily center everything in the maindiv, -->
+<!-- going down in a column. -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -13,16 +15,16 @@
     <title>Listical wonders...?</title>
   </head>
   <body>
-    <nav>
+    <nav class="navbar">
       <a href="index.html">Homepage</a>
-      <a href="listPage.html">Favourite Movies</a>
+      <a href="listPage.html">Movies</a>
       <a href="gallery.html">Gallery</a>
     </nav>
     <div class="mainDiv">
-      <h1>List of stuffs</h1>
+      <h1>Movies</h1>
       <div class="listDiv">
         <ol>
-          <p>Favourite Movies</p>
+          <p>Top Rated Movies on IMDB</p>
           <li>
             <a
               target="_blank"
@@ -60,7 +62,58 @@
           </li>
         </ol>
       </div>
-      <div class="listDiv"></div>
+      <div class="listDiv">
+        <ul>
+          <li>
+            Cast (The Shawshank Redemtion)
+            <ol>
+              <li>Tim Robbins as Andy Dufresne</li>
+              <li>Morgan Freeman as Ellis Boyd 'Red' Redding</li>
+              <li>Bob Gunton as Warden Norton</li>
+            </ol>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            Cast (The Godfather)
+            <ol>
+              <li>Marlon Brando as Don Vito Corleone</li>
+              <li>Al Pacino as Michael Corleone</li>
+              <li>James Caan as Sonny Corleone</li>
+            </ol>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            Cast (The Godfather II)
+            <ol>
+              <li>Al Pacino as Michael</li>
+              <li>Robert Duvall as Tom Hagen</li>
+              <li>Diane Keaton as Kay</li>
+            </ol>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            Cast (The Dark Knight)
+            <ol>
+              <li>Christian Bale as Bruce Wayne</li>
+              <li>Heath Ledger as Joker</li>
+              <li>Aaron Eckhart as Harvey Dent</li>
+            </ol>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            Cast (12 Angry Men)
+            <ol>
+              <li>Martin Balsam as Juror 1</li>
+              <li>John Fiedler as Juror 2</li>
+              <li>Lee J. Cobb as Juror 3</li>
+            </ol>
+          </li>
+        </ul>
+      </div>
     </div>
   </body>
 </html>

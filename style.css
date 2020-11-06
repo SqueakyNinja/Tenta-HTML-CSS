@@ -9,6 +9,12 @@ html {
   background-color: aliceblue;
 }
 
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+}
+
 .mainDiv {
   display: flex;
   flex-direction: column;
@@ -26,4 +32,46 @@ html {
   padding: 10px;
   text-align: center;
   margin: 30px auto;
+}
+
+.listDiv > ol {
+  padding: 0;
+  text-align: center;
+}
+
+.listDiv a {
+  text-decoration: none;
+}
+
+.listDiv > ol > li:nth-of-type(1) > a {
+  color: greenyellow;
+}
+
+.listDiv > ol > li:nth-of-type(2) > a {
+  color: blue;
+}
+.listDiv > ol > li:nth-of-type(3) > a {
+  color: orange;
+}
+.listDiv > ol > li:nth-of-type(4) > a {
+  color: darkgray;
+}
+.listDiv > ol > li:nth-of-type(5) > a {
+  color: salmon;
+}
+
+.listDiv > ul {
+  padding: 0;
+}
+
+.listDiv > ul > li {
+  list-style: none;
+  text-align: center;
+  font-weight: 600;
+}
+
+.listDiv > ul > li > ol > li {
+  list-style: Upper-roman;
+  font-weight: 400;
+  /* text-align: start; */
 }
