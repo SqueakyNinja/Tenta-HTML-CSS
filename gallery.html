@@ -1,4 +1,5 @@
-<!-- This is my page of graphical design.  -->
+<!-- This is my page of graphical design. Has 2 divs that are animated/transition. Also contains a hidden list.
+    Truly wonderful, nothing more to say. -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -10,21 +11,23 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Graphical wonders</title>
+    <title>Gallery of wonders</title>
   </head>
-  <body class="preload-transitions">
+  <body>
     <nav class="navbar">
       <a href="index.html">Homepage</a>
       <a href="listPage.html">Movies</a>
       <a href="gallery.html">Gallery</a>
     </nav>
     <div class="mainDiv">
+      <h1>Gallery of wonders</h1>
       <div class="cubeDiv">
-        <div class="animatedCube">
-          Cube of epic animations <img src="cat2.jpg" alt="" />
+        <div class="animatedCube" id="animatedCube">
+          Cube of epic animations (click me!)
+          <div class="catImage" id="catImage"></div>
         </div>
         <div class="transitionsCube">
-          Cube of epic transitions <img src="cat1.jpg" alt="" />
+          Cube of epic transitions (hover me!)<img src="cat1.jpg" alt="" />
         </div>
       </div>
       <div class="dropdownListDiv">
@@ -42,5 +45,6 @@
         </ul>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
