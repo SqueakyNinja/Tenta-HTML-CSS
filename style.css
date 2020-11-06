@@ -1,0 +1,20 @@
+* {
+  font-family: "Merriweather", serif;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background-color: aliceblue;
+}
+
+.mainDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.welcomeTextDiv {
+  width: 399.9px;
+}
