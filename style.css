@@ -18,3 +18,12 @@ html {
 .welcomeTextDiv {
   width: 399.9px;
 }
+
+.inputDiv {
+  width: 399.9px;
+  border: greenyellow 2px solid;
+  border-radius: 4px;
+  padding: 10px;
+  text-align: center;
+  margin: 30px auto;
+}
